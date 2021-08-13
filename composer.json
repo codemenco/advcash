@@ -1,0 +1,34 @@
+{
+  "name": "codemenco/advcash",
+  "type": "library",
+  "version": "0.0.3",
+  "description": "AdvCash payment system for laravel",
+  "keywords": ["laravel"],
+  "homepage": "https://github.com/codemenco/advcash",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hamid Homa",
+      "email": "codemenco@gmail.com"
+    }
+  ],
+  "extra": {
+      "laravel":{
+          "providers": [
+            "Codemenco\\AdvCash\\AdvCashServiceProvider"
+          ],
+		  "aliases": {
+                "AdvCash": "Codemenco\\AdvCash\\Facades\\AdvCash"
+            }
+      }
+  },
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {"Codemenco\\AdvCash\\": "src/"}
+  }
+}
