@@ -15,10 +15,10 @@
   "extra": {
       "laravel":{
           "providers": [
-            "Codemenco\\AdvCash\\AdvCashServiceProvider"
+            "Codemenco\\Advcash\\AdvCashServiceProvider"
           ],
 		  "aliases": {
-                "AdvCash": "Codemenco\\AdvCash\\Facades\\AdvCash"
+                "AdvCash": "Codemenco\\Advcash\\Facades\\AdvCash"
             }
       }
   },
