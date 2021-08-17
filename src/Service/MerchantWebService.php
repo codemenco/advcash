@@ -1,5 +1,5 @@
 <?php
-namespace Codemenco\AdvCash\Service;
+namespace Codemenco\Advcash\Service;
 if (!class_exists("validationSendMoneyToAdvcashCard")) {
 /**
  * validationSendMoneyToAdvcashCard
@@ -2429,7 +2429,7 @@ class MerchantWebService extends \SoapClient {
 	public function __construct($wsdl="https://wallet.advcash.com/wsm/merchantWebService?wsdl", $options=array()) {
 		foreach(self::$classmap as $wsdlClassName => $phpClassName) {
 		    if(!isset($options['classmap'][$wsdlClassName])) {
-		        $options['classmap'][$wsdlClassName] = 'Codemenco\AdvCash\Service\\'.$phpClassName;
+		        $options['classmap'][$wsdlClassName] = 'Codemenco\Advcash\Service\\'.$phpClassName;
 		    }
 		}
 		$options['location'] = 'https://wallet.advcash.com/wsm/merchantWebService';
