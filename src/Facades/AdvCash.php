@@ -1,9 +1,9 @@
 <?php 
-namespace Codemenco\AdvCash\Facades;  
+namespace Codemenco\Advcash\Facades;  
 
 use Illuminate\Support\Facades\Facade;  
 
-use Codemenco\AdvCash\AdvCash as AdvCashClass;
+use Codemenco\Advcash\AdvCash as AdvCashClass;
 
 class AdvCash extends Facade 
 {
