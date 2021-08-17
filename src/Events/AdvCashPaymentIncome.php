@@ -1,6 +1,6 @@
 <?php
 
-namespace Codemenco\AdvCash\Events;
+namespace Codemenco\Advcash\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Queue\SerializesModels;
