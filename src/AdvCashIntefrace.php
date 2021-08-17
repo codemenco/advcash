@@ -1,5 +1,5 @@
 <?php
-namespace Codemenco\AdvCash;
+namespace Codemenco\Advcash;
 
 use Illuminate\Http\Request;
 

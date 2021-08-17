@@ -1,25 +1,25 @@
 <?php
 
-namespace Codemenco\AdvCash;
+namespace Codemenco\Advcash;
 
 use Illuminate\Http\Request;
 use Config;
 use Route;
 
 use Illuminate\Foundation\Validation\ValidatesRequests;
-use Codemenco\AdvCash\Exceptions\AdvCashException;
+use Codemenco\Advcash\Exceptions\AdvCashException;
 
-use Codemenco\AdvCash\Events\AdvCashPaymentIncome;
-use Codemenco\AdvCash\Events\AdvCashPaymentCancel;
+use Codemenco\Advcash\Events\AdvCashPaymentIncome;
+use Codemenco\Advcash\Events\AdvCashPaymentCancel;
 
-use Codemenco\AdvCash\AdvCashInterface;
+use Codemenco\Advcash\AdvCashInterface;
 use Log;
-use Codemenco\AdvCash\Service\MerchantWebService;
-use Codemenco\AdvCash\Service\authDTO;
-use Codemenco\AdvCash\Service\getBalances;
-use Codemenco\AdvCash\Service\sendMoney;
-use Codemenco\AdvCash\Service\sendMoneyRequest;
-use Codemenco\AdvCash\Service\validationSendMoney;
+use Codemenco\Advcash\Service\MerchantWebService;
+use Codemenco\Advcash\Service\authDTO;
+use Codemenco\Advcash\Service\getBalances;
+use Codemenco\Advcash\Service\sendMoney;
+use Codemenco\Advcash\Service\sendMoneyRequest;
+use Codemenco\Advcash\Service\validationSendMoney;
 class AdvCash implements AdvCashInterface
 {
 	use ValidatesRequests;
