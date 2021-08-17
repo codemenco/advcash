@@ -29,6 +29,6 @@
     "phpunit/phpunit": "^9.0"
   },
   "autoload": {
-    "psr-4": {"Codemenco\\AdvCash\\": "src/"}
+    "psr-4": {"Codemenco\\Advcash\\": "src/"}
   }
 }
