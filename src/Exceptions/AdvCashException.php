@@ -1,5 +1,5 @@
 <?php
-namespace Codemenco\AdvCash\Exceptions;
+namespace Codemenco\Advcash\Exceptions;
 
 
 class AdvCashException extends \Exception
