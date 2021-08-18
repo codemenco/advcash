@@ -36,4 +36,5 @@ Codemenco\Advcash\Events\AdvcashPaymentStatus (AdvcashConfirmResponse $payment)
 
 ```php
 $formHtml = Advcash::createBitcoinRequest(float $amount, string $order_id): string
+AdvcashApi::sendMoney(float $amount, 'EUR', string $email, string $note, false): string
 ```
