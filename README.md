@@ -14,12 +14,12 @@ static setFailRoute(string $route_url): void
 
 ### Add to .env
 ```text
-//SCI
+#SCI
 ADVCASH_NAME=
 ADVCASH_EMAIL=
 ADVCASH_PASS=
 
-//API
+#API
 ADVCASH_API_NAME=
 ADVCASH_API_EMAIL=
 ADVCASH_API_PASS=
