@@ -56,4 +56,31 @@ class AdvcashApi
 			throw new AdvcashException($e->getMessage(),$e->getCode());
 		}
 	}
+	
+	public function sendMoney($amount,string $currency = 'EUR', string $email, string $note = '', $savePaymentTemplate = false)
+	{
+		$arg1 = new sendMoneyRequest();
+		$arg1->amount = $amount;
+		$arg1->currency = $currency;
+		$arg1->email = $email;
+		$arg1->note = $note;
+		$arg1->savePaymentTemplate = $savePaymentTemplate;
+	
+
+		$validationSendMoney = new validationSendMoney();
+		$validationSendMoney->arg0 = $this->auth;
+		$validationSendMoney->arg1 = $arg1;
+		
+		$sendMoney = new sendMoney();
+                $sendMoney->arg0 = $this->auth;
+                $sendMoney->arg1 = $arg1;
+
+		try {
+			$this->service->validationSendMoney($validationSendMoney);
+			$sendMoneyResponse = $merchantWebService->sendMoney($sendMoney);
+			return $sendMoneyResponse;
+		} catch (\Exception $e) {
+			throw new AdvcashException($e->getMessage(),$e->getCode());
+		}
+	}
 }
