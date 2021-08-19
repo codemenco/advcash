@@ -5,7 +5,7 @@ By default, receive routes are disabled. You can turn it on through ADVCASH_DEF=
 
 To put your routes, such methods are available at the facade.
 
-$route_url - A clean link to the page.
+$route_url - A clean link to the page(It is relate to SCI not API).
 ```php
 static setSuccessRoute(string $route_url): void
 static setStatusRoute(string $route_url): void
