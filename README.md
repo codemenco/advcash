@@ -1,5 +1,8 @@
 # Laravel Advcash package
-
+You can install it by running below command in the root folder of Laravel:
+```$xslt
+composer require codemenco/advcash
+```
 ### Settings
 By default, receive routes are disabled. You can turn it on through ADVCASH_DEF=true
 
